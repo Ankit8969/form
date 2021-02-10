@@ -120,3 +120,11 @@ form .btn:hover
 {
     font-weight: bold;
 }
+
+
+@media screen and (max-width:500px)
+{
+    form{
+        width:90%;
+    }
+}
