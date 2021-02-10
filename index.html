@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./styles.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <form action="/submit" method="POST" enctype="multipart/form-data">
+      <div class="fields">
+         <span>Enter Name</span>
+         <input type="text" name="name" required>
+      </div>
+      <div class="fields">
+         <span>Enter Date Of Birth</span>
+         <input name="dob" type="date" required>
+      </div>
+      <div class="fields">
+         <span>Enter Parent Name</span>
+         <input name="parentName" type="text" required>
+      </div>
+      <div class="fields">
+         <span>Enter Address</span>
+         <textarea id="address" name="address" rows="4" cols="50" required></textarea>
+      </div>
+      <div class="fields">
+         <span>Enter Team Name</span>
+         <input id="teamName" name="teamName" type="text" required>
+      </div>
+      <div class="fields">
+         <span>Enter Present Belt Grade</span>
+         <input id="presentBeltGrade" name="presentBeltGrade" type="text">
+      </div>
+
+      <div class="fields">
+         <span>Enter Name Of Coach</span>
+         <input id="coachName" name="coachName" type="text">
+      </div>
+
+      <div class="fields">
+         <span>Enter Kukkiwon Dan No</span>
+         <input id="kukkiwonDanNo" name="kukkiwonDanNo" type="text">
+      </div>
+
+      <div class="fields">
+         <span>Enter Mobile No</span>
+         <input id="mobile" name="mobile" type="text" required>
+      </div>
+
+      <hr>
+
+      <div class="uploadsField">
+         <span>Upload Photo:</span>
+         <input type="file" id="photo" name="photo" accept="image/*" required>
+      </div>
+      <div class="uploadsField">
+         <span>Upload Birth Certificate:</span>
+         <input type="file" id="birthCertificate" name="birthCertificate" required>
+      </div>
+
+      <hr>
+
+      <div class="gender">
+         <p>Please select your gender</p>
+         <div class="gender-fields">
+            <input type="radio" id="Male" name="gender" value="Male" required>
+            <label for="Male">Male</label>
+         </div>
+         <div class="gender-fields">
+            <input type="radio" id="Female" name="gender" value="Female">
+            <label for="Female">Female</label>
+         </div>
+      </div>
+
+      <div class="category">
+         <p>Please select your Age Category</p>
+         <div class="year">
+            <input type="radio" id="Fresher" name="ageCategory" value="Fresher" required class="studentType">
+            <label for="Fresher">Fresher</label>
+         </div>
+         <div class="year">
+            <input type="radio" id="Junior" name="ageCategory" value="Junior" class="studentType">
+            <label for="Junior">Junior</label>
+         </div>
+         <div class="year">
+            <input type="radio" id="Cadet" name="ageCategory" value="Cadet" class="studentType">
+            <label for="Cadet">Cadet</label>
+         </div>
+         <div class="year">
+            <input type="radio" id="Senior" name="ageCategory" value="Senior" class="studentType">
+            <label for="Senior">Senior</label>
+         </div>
+         <div class="year">
+            <input type="radio" id="SubJr" name="ageCategory" value="Sub Jr." class="studentType">
+            <label for="SubJr">Sub Jr.</label>
+         </div>
+      </div>
+
+      <div class="events">
+      </div>
+
+      <div class="btn-box">
+         <input type="submit" name="submit" value="Pay Now" class="btn">
+      </div>
+   </form>
+   <script src="index.js"></script>
+</body>
+
+</html>
